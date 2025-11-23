@@ -11,8 +11,8 @@
 
 This is the official frontend for **StudyGapAI**, an AI-powered diagnostic tool that identifies the hidden, foundational knowledge gaps holding Nigerian JAMB students back. Built with React, Vite, and TailwindCSS.
 
-**➡️ Live App:** [https://Tessa-777.github.io/Royal-Light-StudyGapAI](https://Tessa-777.github.io/Royal-Light-StudyGapAI)  
-**➡️ Backend Repository:** [https://github.com/Tessa-777/Royal-Light-StudyGapAI-Backend.git](https://github.com/Tessa-777/Royal-Light-StudyGapAI-Backend.git)
+**➡️ Live App:** [https://Tessa-777.github.io/StudyGapAI](https://Tessa-777.github.io/StudyGapAI)  
+**➡️ Backend Repository:** [https://github.com/Tessa-777/StudyGapAI-Backend.git](https://github.com/Tessa-777/StudyGapAI-Backend.git)
 
 > **⚠️ Important: The `backend-ai-integrated-main` Branch**
 > The primary and most up-to-date code for this backend is located in the `backend-ai-integrated-main` branch. Please ensure you clone and work from this specific branch.
@@ -22,7 +22,7 @@ This is the official frontend for **StudyGapAI**, an AI-powered diagnostic tool 
 
 StudyGapAI was developed entirely by Theresia Saumu as the sole developer for the WUD AI Hackathon 2025 (1st Place Winner).
 
-**Technical Development:** 100% developed by Theresia Kitele
+**Technical Development:** 100% developed by Theresia Saumu
 - Full-stack architecture and implementation
 - All backend code (Python Flask)
 - All frontend code
@@ -62,8 +62,8 @@ StudyGapAI was developed entirely by Theresia Saumu as the sole developer for th
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/Tessa-777/Royal-Light-StudyGapAI.git
-    cd Royal-Light-StudyGapAI
+    git clone https://github.com/Tessa-777/StudyGapAI.git
+    cd StudyGapAI
     ```
 
 2.  **Install dependencies:**
