@@ -20,7 +20,7 @@ This is the official frontend for **StudyGapAI**, an AI-powered diagnostic tool 
 
 ## Development & Authorship
 
-StudyGapAI was developed entirely by Theresia Saumu as the sole developer for the WUD AI Hackathon 2024 (1st Place Winner).
+StudyGapAI was developed entirely by Theresia Saumu as the sole developer for the WUD AI Hackathon 2025 (1st Place Winner).
 
 **Technical Development:** 100% developed by Theresia Kitele
 - Full-stack architecture and implementation
