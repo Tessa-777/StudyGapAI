@@ -18,6 +18,22 @@ This is the official frontend for **StudyGapAI**, an AI-powered diagnostic tool 
 > The primary and most up-to-date code for this backend is located in the `backend-ai-integrated-main` branch. Please ensure you clone and work from this specific branch.
 ---
 
+## Development & Authorship
+
+StudyGapAI was developed entirely by Theresia Saumu as the sole developer for the WUD AI Hackathon 2024 (1st Place Winner).
+
+**Technical Development:** 100% developed by Theresia Kitele
+- Full-stack architecture and implementation
+- All backend code (Python Flask)
+- All frontend code
+- Database design and implementation
+- AI integration and prompt engineering
+- Deployment and DevOps
+
+**Hackathon Collaboration:** During the 1 week hackathon sprint, team members contributed to ideation and strategic direction. All code and technical implementation was authored solely by Theresia Saumu.
+
+**Current Status:** StudyGapAI is now being developed independently by Theresia Saumu.
+
 ## ✨ Core Features
 
 - **Guest Mode Quiz:** Users can take a full diagnostic quiz without creating an account. All progress is saved locally and can be migrated after signing up.
@@ -82,111 +98,4 @@ For a complete breakdown of the AI tools used in development and in the product,
 
 All project documentation, including technical specifications and setup guides, is organized in the [`/docs`](./docs/) folder.
 
-## 🤝 Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 ```
-
----
-
-### **Revised `README.md` for Backend**
-
-This version is authoritative for the API. It clearly outlines the architecture, features, and how to set it up. It provides a clear and detailed API endpoint reference, which is crucial for any backend project.
-
-```markdown
-# 🧠 StudyGapAI - Backend API
-
-<p align="center">
-  <img alt="Python" src="https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-  <img alt="Flask" src="https://img.shields.io/badge/Flask-3.x-000000?style=for-the-badge&logo=flask&logoColor=white"/>
-  <img alt="Supabase" src="https://img.shields.io/badge/Supabase-PostgreSQL-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white"/>
-  <img alt="Google Gemini" src="https://img.shields.io/badge/Google_Gemini-2.0_Flash-4285F4?style=for-the-badge&logo=google&logoColor=white"/>
-</p>
-
-This is the official backend for **StudyGapAI**, an AI-powered learning diagnostics platform. It combines **Flask**, **Supabase**, and the **Google Gemini API** to provide personalized analysis and study plans for Nigerian students.
-
-**➡️ Frontend Repository:** [https://github.com/Tessa-777/Royal-Light-StudyGapAI](https://github.com/Tessa-777/Royal-Light-StudyGapAI)
-
----
-
-## ✨ Core Features
-
-- **AI-Powered Diagnostic Engine:** The core of the API. Analyzes quiz results and student explanations to identify root cause knowledge gaps.
-- **Personalized Study Plan Generation:** Creates tailored 6-week study roadmaps based on diagnostic data.
-- **Secure Authentication:** Manages user registration, login, and profiles using Supabase Auth.
-- **Comprehensive Progress Tracking:** Endpoints to store and retrieve quiz history, performance metrics, and study plan progress.
-- **RESTful API Design:** Clean, well-structured endpoints for seamless integration with any frontend client.
-
-## 🛠️ Tech Stack
-
-| Layer | Technology | Purpose |
-|-------|------------|---------|
-| **Framework** | Flask (Python) | Core API & Business Logic |
-| **Database** | Supabase (PostgreSQL) | Data Storage, Auth & Row-Level Security |
-| **AI Engine** | Google Gemini 2.0 Flash | Diagnostic Analysis & Plan Generation |
-| **Hosting** | Railway / Render | Deployment |
-
-## 🚀 Getting Started
-
-### 1. Prerequisites
-- Python 3.10+ and `pip`
-- A Supabase project
-- A Google AI API Key
-
-### 2. Installation & Setup
-
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/your-repo-url/StudyGapAI-Backend.git
-    cd StudyGapAI-Backend
-    ```
-
-2.  **Install dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3.  **Set up environment variables:**
-    Create a `.env` file in the root and add your credentials:
-    ```env
-    SUPABASE_URL=https://your-project-id.supabase.co
-    SUPABASE_ANON_KEY=your-anon-key
-    SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
-    GOOGLE_API_KEY=your-gemini-api-key
-    ```
-
-4.  **Run database migrations:**
-    Apply the SQL migrations located in the `/supabase/migrations` directory to your Supabase project via the SQL Editor. This sets up the required tables and Row-Level Security policies.
-
-5.  **Run the development server:**
-    ```bash
-    flask run
-    ```
-    The API will be available at `http://127.0.0.1:5000`.
-
-## 🤖 The AI Engine (Google Gemini)
-
-Our API's core intelligence comes from **Google Gemini 2.0 Flash**.
-
-- **Why Gemini?** It offers the perfect balance of fast response times (3-5 seconds per analysis), low cost, and strong reasoning capabilities for the Nigerian educational context.
-- **How it Works:** We use a carefully engineered 287-line system prompt that instructs the model to perform a deep analysis and return a validated, structured JSON response. This ensures reliability and consistency for the frontend.
-
-## 🔑 API Endpoints
-
-### Authentication
-- `POST /api/users/register`: Register a new user.
-- `POST /api/users/login`: Authenticate a user and receive a JWT.
-- `GET /api/users/me`: Get the current authenticated user's profile.
-
-### AI Diagnostics & Study Plans
-- `POST /api/ai/analyze-diagnostic`: **(Core Endpoint)** Submits quiz data and student explanations. Returns a comprehensive AI-generated diagnostic report, including root cause analysis, a projected score, and a full 6-week study plan.
-- `POST /api/ai/save-diagnostic`: Saves a guest user's diagnostic results to their account after they register.
-- `POST /api/ai/explain-answer`: Get a detailed, AI-generated explanation for a specific quiz question.
-
-### Quizzes & Progress
-- `GET /api/quiz/questions`: Retrieve the list of diagnostic quiz questions.
-- `GET /api/progress/progress`: Get a user's historical performance data.
-
-## 📄 AI Acceleration Report
-
-This project was built in a hackathon timeframe using extensive AI assistance. For a complete breakdown, see our **[AI Acceleration Report](AI_ACCELERATION_REPORT.md)**.
