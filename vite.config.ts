@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react";
 
 // GitHub Pages configuration
 // Repository name for GitHub Pages subdirectory
-const repoName = "Royal-Light-StudyGapAI";
+const repoName = "StudyGapAI";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {

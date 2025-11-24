@@ -9,16 +9,16 @@
       // Simple redirect - always go to home page
       (function() {
         var l = window.location;
-        var homePath = '/Royal-Light-StudyGapAI/';
+        var homePath = '/StudyGapAI/';
         
         // Try SPA routing first for valid routes
         var segmentCount = 1;
         var path = l.pathname;
         
         // If path looks like a valid SPA route, try SPA redirect
-        if (path.includes('/Royal-Light-StudyGapAI/') && 
-            path !== '/Royal-Light-StudyGapAI/' && 
-            path !== '/Royal-Light-StudyGapAI/404.html' &&
+        if (path.includes('/StudyGapAI/') && 
+            path !== '/StudyGapAI/' && 
+            path !== '/StudyGapAI/404.html' &&
             !path.includes('/assets/') &&
             !path.includes('.html') &&
             !path.includes('.js') &&
@@ -47,7 +47,7 @@
     <!-- Fallback content in case JavaScript is disabled -->
     <noscript>
       <p>JavaScript is required for this application to work. Please enable JavaScript in your browser.</p>
-      <p><a href="/Royal-Light-StudyGapAI/">Go to Home Page</a></p>
+      <p><a href="/StudyGapAI/">Go to Home Page</a></p>
     </noscript>
     <p>Redirecting to home page...</p>
   </body>

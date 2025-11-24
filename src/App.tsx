@@ -70,7 +70,7 @@ const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
 
 export function App() {
   // Get base path from Vite config (for GitHub Pages)
-  // In production, this will be /Royal-Light-StudyGapAI/
+  // In production, this will be /StudyGapAI/
   // In development, this will be /
   const base = import.meta.env.BASE_URL || '/';
   
